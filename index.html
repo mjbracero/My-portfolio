@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Jennyrose Bracero | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Mary Jennyrose Bracero — 4th year BSIT student and full-stack developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+
+  <div class="site-shell">
+  <header class="site-header">
+    <a class="logo" href="#top">MJB</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="brand animate-in" style="--delay: 0.15s">Hello, I'm Jenny</p>
+        <h1 class="subtitle animate-in" style="--delay: 0.3s">Aspiring Full-Stack Developer</h1>
+        <p class="lede animate-in" style="--delay: 0.45s">
+          I provide end-to-end digital solutions by designing and developing modern websites and mobile applications that are visually engaging, user-friendly, secure, and scalable. From intuitive user interfaces to robust backend systems, I create solutions that help businesses grow and achieve their digital goals.
+        </p>
+        <div class="cta-group animate-in" style="--delay: 0.6s">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="hero-visual">
+          <img
+            src="images/BRACERO-1X1.png"
+            alt="Portrait of Mary Jennyrose Bracero"
+            width="640"
+            height="800"
+          />
+        </div>
+        <span class="open-to-work animate-in" style="--delay: 0.2s">
+          <span class="open-dot" aria-hidden="true"></span>
+          <span class="status-label">&gt; status:</span>
+          <span class="status-text">open_to_work</span>
+        </span>
+        <div class="profile-terminal animate-in" style="--delay: 0.35s" aria-label="Developer profile terminal">
+          <div class="terminal-bar" aria-hidden="true">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-title">jenny@portfolio:~</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line">
+              <span class="status-label">&gt; name:</span>
+              <span class="profile-name typewriter" data-text="Mary Jennyrose Bracero" aria-label="Mary Jennyrose Bracero"></span>
+            </p>
+            <p class="terminal-line">
+              <span class="status-label">&gt; role:</span>
+              <span class="profile-role typewriter" data-text="Aspiring Full-Stack Developer" aria-label="Aspiring Full-Stack Developer"></span>
+            </p>
+            <p class="terminal-line">
+              <span class="status-label">&gt; location:</span>
+              <span class="profile-location typewriter" data-text="Philippines" aria-label="Philippines"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="section-label">About</p>
+      <h2>Building Digital Solutions with Purpose.</h2>
+      <p>
+        I'm Mary Jennyrose Bracero, a fourth-year BSIT student dedicated to developing modern web and mobile applications. I combine technical expertise with a user-focused approach to create applications that are both visually engaging and highly functional. I continuously seek opportunities to learn new technologies and deliver impactful digital solutions.
+      </p>
+    </section>
+
+    <section class="section education" id="education">
+      <p class="section-label">Education</p>
+      <h2>Academic Background</h2>
+      <div class="edu-list">
+        <article class="edu-item">
+          <span class="edu-year">2023 — Present</span>
+          <div class="edu-body">
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p class="edu-school">Cebu Roosevelt Memorial Colleges</p>
+            <p>4th year BSIT student focusing on full-stack development, databases, and building secure, user-centered digital solutions.</p>
+          </div>
+        </article>
+        <article class="edu-item">
+          <span class="edu-year">2021 — 2023</span>
+          <div class="edu-body">
+            <h3>Senior High School — Science, Technology, Engineering, and Mathematics</h3>
+            <p class="edu-school">Cebu Roosevelt Memorial Colleges</p>
+            <p>Strengthened foundations in science, technology, engineering, and mathematics while discovering a passion for computing and digital creation.</p>
+          </div>
+        </article>
+        <article class="edu-item">
+          <span class="edu-year">2016 — 2021</span>
+          <div class="edu-body">
+            <h3>Junior High School</h3>
+            <p class="edu-school">Cebu Roosevelt Memorial Colleges</p>
+            <p>Built early academic foundations, curiosity, and problem-solving skills that shaped my path toward information technology.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <p class="section-label">Skills</p>
+      <h2>Tech Stack</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Front End</h3>
+          <ul class="skill-rail">
+            <li class="skill-item" style="--i: 0">HTML</li>
+            <li class="skill-item" style="--i: 1">CSS</li>
+            <li class="skill-item" style="--i: 2">TypeScript</li>
+            <li class="skill-item" style="--i: 3">React</li>
+            <li class="skill-item" style="--i: 4">Flutter</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="skill-rail">
+            <li class="skill-item" style="--i: 5">JavaScript</li>
+            <li class="skill-item" style="--i: 6">Node.js</li>
+            <li class="skill-item" style="--i: 7">PHP</li>
+            <li class="skill-item" style="--i: 8">Dart</li>
+            <li class="skill-item" style="--i: 9">Supabase</li>
+            <li class="skill-item" style="--i: 10">Firebase</li>
+            <li class="skill-item" style="--i: 11">PostgreSQL</li>
+            <li class="skill-item" style="--i: 12">MySQL</li>
+            <li class="skill-item" style="--i: 13">REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul class="skill-rail">
+            <li class="skill-item" style="--i: 14">Git</li>
+            <li class="skill-item" style="--i: 15">Github</li>
+            <li class="skill-item" style="--i: 15">VS Code</li>
+            <li class="skill-item" style="--i: 16">Expo</li>
+            <li class="skill-item" style="--i: 19">Figma</li>
+            <li class="skill-item" style="--i: 20">Canva</li>
+            <li class="skill-item" style="--i: 17">Adobe Photoshop</li>
+            <li class="skill-item" style="--i: 18">Adobe Illustrator</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI</h3>
+          <ul class="skill-rail">
+            <li class="skill-item" style="--i: 21">Cursor</li>
+            <li class="skill-item" style="--i: 22">ChatGPT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <p class="section-label">Projects</p>
+      <h2>Projects I've Built</h2>
+      <div class="project-groups">
+        <div class="project-group">
+          <h3 class="project-category">Websites</h3>
+          <div class="project-list project-list--row">
+            <article class="project">
+              <a class="project-media" href="https://maison-rente.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img src="images/projects/maison-rente.png" alt="Maison Renté website preview" width="640" height="400" loading="lazy" />
+              </a>
+              <div class="project-body">
+                <h3>
+                  <a href="https://maison-rente.vercel.app/" target="_blank" rel="noopener noreferrer">Maison Renté</a>
+                </h3>
+                <p>Boutique dress rental website for curated gowns and special occasions — elegant browsing and rental experience.</p>
+                <p class="project-stack">HTML · CSS</p>
+                <a class="project-link" href="https://maison-rente.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+              </div>
+            </article>
+            <article class="project">
+              <a class="project-media" href="https://just-dessert.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img src="images/projects/just-dessert.png" alt="Just Dessert website preview" width="640" height="400" loading="lazy" />
+              </a>
+              <div class="project-body">
+                <h3>
+                  <a href="https://just-dessert.vercel.app/" target="_blank" rel="noopener noreferrer">Just Dessert</a>
+                </h3>
+                <p>Dessert shop website featuring baked treats, menu browsing, and online ordering for pick-up or delivery.</p>
+                <p class="project-stack">HTML · CSS</p>
+                <a class="project-link" href="https://just-dessert.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group">
+          <h3 class="project-category">Mobile Applications</h3>
+          <div class="project-list">
+            <article class="project">
+              <div class="project-media project-media--blank" aria-hidden="true">
+                <span class="project-blank-num">01</span>
+              </div>
+              <div class="project-body">
+                <div class="project-title-row">
+                  <h3>CitiSense</h3>
+                  <span class="project-badge">Under Development</span>
+                </div>
+                <p>CitiSense is a mobile application that connects citizens with their Local Government Unit (LGU). Users can submit community concerns, monitor the status of their reports, and receive updates as LGU personnel review and address each issue, promoting transparency and faster public service.</p>
+                <p class="project-stack">React Native · JavaScript · Expo · Supabase · PostgreSQL · RLS</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="section-label">Contact</p>
+      <h2>Let's Work Together.</h2>
+      <p>Interested in internships, freelance opportunities, and meaningful collaborations that solve real-world problems.</p>
+      <div class="contact-list">
+        <a class="contact-item" href="mailto:maryjennyrosebracero@gmail.com">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <span class="contact-meta">
+            <span class="contact-name">Email</span>
+            <span class="contact-value">maryjennyrosebracero@gmail.com</span>
+          </span>
+        </a>
+        <a class="contact-item" href="https://github.com/mjbracero" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 7.5c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .26.18.59.69.48A10.27 10.27 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
+            </svg>
+          </span>
+          <span class="contact-meta">
+            <span class="contact-name">GitHub</span>
+            <span class="contact-value">mjbracero</span>
+          </span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/mary-jennyrose-bracero-400b84396/" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.34 18.34H5.67V9.75h2.67v8.59zM7 8.57a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1zM18.34 18.34h-2.67v-4.18c0-1-.02-2.28-1.39-2.28-1.39 0-1.6 1.09-1.6 2.21v4.25h-2.67V9.75h2.56v1.17h.04c.36-.68 1.23-1.39 2.53-1.39 2.7 0 3.2 1.78 3.2 4.09v4.72z" />
+            </svg>
+          </span>
+          <span class="contact-meta">
+            <span class="contact-name">LinkedIn</span>
+            <span class="contact-value">Mary Jennyrose Bracero</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Mary Jennyrose Bracero.</p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
